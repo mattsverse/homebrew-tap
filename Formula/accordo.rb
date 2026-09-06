@@ -5,21 +5,21 @@ class Accordo < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/mattsverse/accordo/releases/download/v0.1.0/accordo-aarch64-apple-darwin.tar.xz"
-      sha256 "bd4a419d4baa2a6b42fe57f0deb9f7031133eb6d3c6c5facc84272c107e15329"
+      sha256 "5c3f5c35d82f0fe2325683abd768a35ab3373cfd864e2a5de422dd659272071c"
     end
     if Hardware::CPU.intel?
       url "https://github.com/mattsverse/accordo/releases/download/v0.1.0/accordo-x86_64-apple-darwin.tar.xz"
-      sha256 "7de11cd6ccdb2d2d0986a57cf0505fc98c20a58771df83379fa58538c4f432ae"
+      sha256 "b5c045a933fef86e98d581956eeb76143e6b9333cc84318ea96b5d5022ba89e1"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/mattsverse/accordo/releases/download/v0.1.0/accordo-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "dae61fe86b6eb12c6ff916a552218e6d58850b25ada4095510ef2a3876e0725b"
+      sha256 "bc29ecd5cdfd898394c49ab527d4d2e09bf447fbb78a2f4d2110d5432ef095c0"
     end
     if Hardware::CPU.intel?
       url "https://github.com/mattsverse/accordo/releases/download/v0.1.0/accordo-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7feafab7d2707645981776b52d80f3235316a0ecc30f458f92b9fa5b55397a65"
+      sha256 "d8da0699da24e9d4a468b2760d78ea8c8fbf5fe5b871dd04bc9282bef5b15531"
     end
   end
   license "MIT"
