@@ -1,6 +1,6 @@
 cask "octowatcher" do
-  version "0.6.1"
-  sha256 "36860f5b0f08f94961dfa123878228e3c463f689d22cadec1c192ce9fdda9c1d"
+  version "0.7.0"
+  sha256 "b9dc3df506e75d244de4e6ffd7716d5194cea268a4c8d734e979ad0bb7a640ef"
 
   url "https://github.com/mattsverse/octowatch/releases/download/v#{version}/Octowatcher.dmg"
   name "Octowatcher"
