@@ -1,6 +1,6 @@
 cask "caffettino" do
-  version "0.1.0"
-  sha256 "0dced94b9cb456aa7cfde76ac3bd0a2bae8c5ea1f08b72e953dfbc442d51b378"
+  version "0.2.0"
+  sha256 "07a8945ecb2496ec94552513cedb669e36b4d9eb64c515e5d8a005f682789124"
 
   url "https://github.com/mattsverse/caffettino/releases/download/v#{version}/Caffettino-#{version}-arm64.dmg"
   name "Caffettino"
@@ -9,6 +9,9 @@ cask "caffettino" do
 
   depends_on arch: :arm64
   depends_on macos: ">= :ventura"
+
+  # Caffettino updates itself in place; `brew upgrade` leaves it to that.
+  auto_updates true
 
   app "Caffettino.app"
 
