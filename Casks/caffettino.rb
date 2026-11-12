@@ -1,6 +1,6 @@
 cask "caffettino" do
-  version "0.3.0"
-  sha256 "4fcff5a94447014505db2e3ef9ecdb31de4d748b7d022b35f7ad1ccdd17ec233"
+  version "0.4.0"
+  sha256 "a2c2fdd72cef82d2a6540ed47779d5ee93fdd913f85bdb9e3f0dcea7983029c4"
 
   url "https://github.com/mattsverse/caffettino/releases/download/v#{version}/Caffettino-#{version}-universal.dmg"
   name "Caffettino"
@@ -13,6 +13,7 @@ cask "caffettino" do
   auto_updates true
 
   app "Caffettino.app"
+  binary "#{appdir}/Caffettino.app/Contents/MacOS/caffettino"
 
   uninstall quit: "com.matteogassend.caffettino"
 end
