@@ -2,18 +2,18 @@
 class Postden < Formula
   desc "Local, privacy-focused, no-frills email"
   homepage "https://github.com/mattsverse/postden"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   # macOS installs the app with the cask of the same name.
   depends_on :linux
 
   if Hardware::CPU.arm?
-    url "https://github.com/mattsverse/postden/releases/download/v0.3.0/postden-0.3.0-aarch64-unknown-linux-gnu.tar.gz"
-    sha256 "04c4c9c31011cfa088ae97e8e258455711c441a8b912de60b73396095cdab1a0"
+    url "https://github.com/mattsverse/postden/releases/download/v0.4.0/postden-0.4.0-aarch64-unknown-linux-gnu.tar.gz"
+    sha256 "c28d63a3fdb1aafb7a51bf3bfa2b5db658c37c2c71ad3a6589eaf427c8856c02"
   else
-    url "https://github.com/mattsverse/postden/releases/download/v0.3.0/postden-0.3.0-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "bf2ca800f6fb902a97cb52146d70448676b8adb007f6b374b5abe7aa3b7fa49d"
+    url "https://github.com/mattsverse/postden/releases/download/v0.4.0/postden-0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "0c435a9b60aa4c56be1d147b05921e05081f01528f4c28f80d873daccb9a4727"
   end
 
   def install
